@@ -1,6 +1,8 @@
 <template>
-    <input v-model="id" type="text">
-    <button @click="eliminarEstudiante">Eliminar</button>
+    <div class="container">
+        <input v-model="id" type="text" placeholder="Inserte ID para eliminar">
+        <button @click="eliminarEstudiante">Eliminar</button>
+    </div>
 </template>
 
 <script>
@@ -28,4 +30,28 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+button {
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+input {
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: 0;
+
+}
+
+input :focus {
+    outline: none;
+}
+
+input :hover {
+    background-color: beige;
+}
+</style>
