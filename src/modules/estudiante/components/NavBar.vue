@@ -3,7 +3,7 @@
     <div>
       <router-link to="/guarda">Guardar</router-link>
       <router-link to="/actualiza">Actualizar</router-link>
-      <router-link to="/consulta"  >Consultar</router-link>
+      <router-link to="/busca"  >Consultar</router-link>
       <router-link to="/elimina">Eliminar</router-link>
     </div>
   </div>

@@ -45,7 +45,7 @@ export default {
     },
 
     methods: {
-        async guardarEstudiante() {
+        guardarEstudiante() {
             const data = {
                 cedula: this.cedula,
                 nombre: this.nombre,
@@ -53,7 +53,10 @@ export default {
                 provincia: "Pichincha",
                 fechaNacimiento: "1996-01-12T00:00:00"
             }
-            await ingresarEstudianteFachada(data);
+            ingresarEstudianteFachada(data);
+            this.cedula="",
+            this.nombre="",
+            this.apellido=""
 
         },
     },
@@ -61,15 +64,14 @@ export default {
 </script>
 
 <style scoped>
-
-.container{
+.container {
     display: flex;
     justify-content: center;
     display: grid;
     align-items: center;
 }
 
-button{
+button {
     margin: 20px;
     border-radius: 5px;
     border: 1px;
@@ -78,25 +80,23 @@ button{
 }
 
 
-input{
+input {
     border: 0px;
     border-bottom: 1px solid black;
     outline: 0;
-    
+
 }
 
 
-td{
+td {
     text-align: right;
 }
 
-input :focus{
+input :focus {
     outline: none;
 }
 
-input :hover{
+input :hover {
     background-color: beige;
 }
-
-
 </style>

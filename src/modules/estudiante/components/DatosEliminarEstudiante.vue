@@ -25,6 +25,7 @@ export default {
             this.nombre = data.nombre
             this.apellido = data.apellido
             console.log(data);
+            
         },
     },
 };

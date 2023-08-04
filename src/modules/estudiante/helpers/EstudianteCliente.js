@@ -41,10 +41,12 @@ const obtenerEstudianteAPIAxios = async (cedula) => {
 
 const ingresarEstudiante = (bodyEstudiante) => {
     axios.post(`http://localhost:8080/API/v1.0/Matricula/estudiantes`, bodyEstudiante).then(r => r.data);
+    console.log('Estudiante insertado');
 }
 
 const actualizarEstudiante = (bodyEstudiante, id) => {
     axios.put(`http://localhost:8080/API/v1.0/Matricula/estudiantes/${id}`, bodyEstudiante).then(r => r.data);
+  
 }
 
 const eliminarEstudiante = async(id) => {
