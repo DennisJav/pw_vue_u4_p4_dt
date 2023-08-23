@@ -62,8 +62,10 @@ export default {
         //const {prov1}= this.$route.query;
         // /estudiante?provincia=pichincha&ciudad=quito
         console.log('----------------------');
-        //this.consultarEstudiante();
+        //this.consultarEstudiante();  ---
         //eliminar esto
+        //el metodo lo llama para mandar por la url
+        
     },
 
 };
