@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <table>
+        <table >
             <tr>
                 <td>
-                    <label for="">CEDULA</label>
+                        <label  >CEDULA</label>       
                 </td>
                 <td>
-                    <input v-model="cedula" type="text">
+                        <input v-model="cedula" type="text"> 
                 </td>
             </tr>
 
@@ -29,7 +29,7 @@
             </tr>
         </table>
 
-        <button @click="guardarEstudiante">Guardar</button>
+        <button  class="btn btn-primary" @click="guardarEstudiante">Guardar</button>
     </div>
 </template>
 

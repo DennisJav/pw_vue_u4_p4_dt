@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <input v-model="id" type="text" placeholder="Inserte ID para eliminar">
-        <button @click="eliminarEstudiante">Eliminar</button>
+        <button class="btn btn-primary" @click="eliminarEstudiante">Eliminar</button>
     </div>
 </template>
 

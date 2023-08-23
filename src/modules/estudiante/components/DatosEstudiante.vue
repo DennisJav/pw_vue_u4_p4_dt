@@ -3,7 +3,7 @@
 
         <div class="datosConsultar">
             <input v-model="cedula" type="text" placeholder="Inserte cedula del Estudiante">
-            <button @click="consultarEstudiante">Consultar</button>
+            <button class="btn btn-primary" @click="consultarEstudiante">Consultar</button>
         </div>
 
         <div class="resultado">
@@ -14,7 +14,7 @@
                         <label for="">NOMBRE</label>
                     </td>
                     <td>
-                        <input v-model="nombre" type="text" readonly="true">
+                        <input class="form-control" v-model="nombre" type="text" readonly="true">
                     </td>
 
                 </tr>
@@ -23,7 +23,7 @@
                         <label for="">APELLIDO</label>
                     </td>
                     <td>
-                        <input v-model="apellido" type="text" readonly="true">
+                        <input class="form-control" v-model="apellido" type="text" readonly="true">
                     </td>
                 </tr>
             </table>
@@ -65,7 +65,7 @@ export default {
         //this.consultarEstudiante();  ---
         //eliminar esto
         //el metodo lo llama para mandar por la url
-        
+
     },
 
 };

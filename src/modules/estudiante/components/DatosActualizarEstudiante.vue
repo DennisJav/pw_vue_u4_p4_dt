@@ -36,7 +36,7 @@
                 </td>
             </tr>
         </table>           
-            <button @click="actualizarEstudiante">Actualizar</button>
+            <button class="btn btn-primary" @click="actualizarEstudiante">Actualizar</button>
 
     </div>
 </template>
