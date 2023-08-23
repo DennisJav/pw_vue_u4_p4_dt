@@ -10,7 +10,7 @@ const routes = [
         component: ()=> import('../modules/estudiante/pages/ActualizarEstudiante')
     },
     {
-        path: "/busca/:ced",
+        path: "/busca",
         component: ()=> import('../modules/estudiante/pages/ConsultaEstudiante')
     },
     {

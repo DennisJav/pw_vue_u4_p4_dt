@@ -35,7 +35,7 @@
 
 
 <script>
-import { obtenerEstudianteFachada } from "../helpers/EstudianteCliente.js"
+import { obtenerEstudianteFachadaApiAxios } from "../helpers/EstudianteCliente.js"
 export default {
     data() {
         return {
@@ -47,7 +47,7 @@ export default {
 
     methods: {
         async consultarEstudiante() {
-            const data = await obtenerEstudianteFachada(this.cedula);
+            const data = await obtenerEstudianteFachadaApiAxios(this.cedula);
             this.nombre = data.nombre;
             this.apellido = data.apellido;
         },
@@ -58,8 +58,8 @@ export default {
         console.log(ced);
         this.cedula=ced;
    
-        const prov = this.$route.query.provincia;
-        const {prov1}= this.$route.query;
+        //const prov = this.$route.query.provincia;
+        //const {prov1}= this.$route.query;
         // /estudiante?provincia=pichincha&ciudad=quito
         console.log('----------------------');
         this.consultarEstudiante();
